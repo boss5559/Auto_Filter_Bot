@@ -99,13 +99,16 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton(' ʜᴇʟᴘ 📢', callback_data='help'),
-                    InlineKeyboardButton(' ᴀʙᴏᴜᴛ 📖', callback_data='about')
+                    InlineKeyboardButton('[ɢʀᴏᴜᴘ]', callback_data='help'),
+                    InlineKeyboardButton('[ᴄʜᴀɴɴᴇɪ] ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ⭐', callback_data="topsearch"),
-                    InlineKeyboardButton('ᴜᴘɢʀᴀᴅᴇ 🎟', callback_data="premium_info"),
+                    InlineKeyboardButton('[ʜᴇʟᴘ]', callback_data='help'),
+                    InlineKeyboardButton('[ᴀʙᴏᴜᴛ]', callback_data='about')
+                ],[
+                    InlineKeyboardButton('[ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ]', callback_data="topsearch"),
+                    InlineKeyboardButton('[ᴜᴘɢʀᴀᴅᴇ] ', callback_data="premium_info"),
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -118,7 +121,7 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌘"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 🌑"
-        m=await message.reply_text("⏳")
+        m=await message.reply_sticker("CAACAgUAAxkBAAEPrpJpBvuvUtHY5ZF4z-N43Fbn3CLlZgACERwAAvvuAAFUnK4JlN-_m702BA")
         await asyncio.sleep(0.4)
         await m.delete()        
         await message.reply_photo(
@@ -131,13 +134,16 @@ async def start(client, message):
 
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton(' ʜᴇʟᴘ 📢', callback_data='help'),
-                    InlineKeyboardButton(' ᴀʙᴏᴜᴛ 📖', callback_data='about')
+                    InlineKeyboardButton('[ɢʀᴏᴜᴘ]', callback_data='help'),
+                    InlineKeyboardButton('[ᴄʜᴀɴɴᴇɪ] ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ⭐', callback_data="topsearch"),
-                    InlineKeyboardButton('ᴜᴘɢʀᴀᴅᴇ 🎟', callback_data="premium_info"),
+                    InlineKeyboardButton('[ʜᴇʟᴘ]', callback_data='help'),
+                    InlineKeyboardButton('[ᴀʙᴏᴜᴛ]', callback_data='about')
+                ],[
+                    InlineKeyboardButton('[ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ]', callback_data="topsearch"),
+                    InlineKeyboardButton('[ᴜᴘɢʀᴀᴅᴇ] ', callback_data="premium_info"),
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -150,7 +156,7 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌘"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 🌑"
-        m=await message.reply_text("⏳")
+        m=await message.reply_sticker("CAACAgUAAxkBAAEPrpJpBvuvUtHY5ZF4z-N43Fbn3CLlZgACERwAAvvuAAFUnK4JlN-_m702BA")
         await asyncio.sleep(0.4)
         await m.delete()        
         await message.reply_photo(
