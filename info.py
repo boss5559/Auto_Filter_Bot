@@ -127,9 +127,9 @@ UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/OveshBossOfficial
 # ============================
 # User Configuration
 # ============================
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1416433622').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '5134768968 1416433622').split()]
 
 # ============================
 # Miscellaneous Configuration
@@ -154,7 +154,7 @@ AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True) # Auto Fi
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True) # Auto Delete On (True) / Off (False)
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False) # Long IMDB Description On (True) / Off (False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True) # Spell Check Mode On (True) / Off (False)
-MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False) # Melcow New Users On (True) / Off (False)
+MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True) # Melcow New Users On (True) / Off (False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False) # Protect Content On (True) / Off (False)
 PM_SEARCH = bool(environ.get('PM_SEARCH', True))  # PM Search On (True) / Off (False)
 EMOJI_MODE = bool(environ.get('EMOJI_MODE', True))  # Emoji status On (True) / Off (False)
@@ -233,7 +233,7 @@ else:
 # ============================
 # Reactions Configuration
 # ============================
-REACTIONS = ["🤝", "😇", "🤗", "😍", "👍", "🎅", "😐", "🥰", "🤩", "😱", "🤣", "😘", "👏", "😛", "😈", "🎉", "⚡️", "🫡", "🤓", "😎", "🏆", "🔥", "🤭", "🌚", "🆒", "👻", "😁"]
+REACTIONS = ["❤️", "😇", "💐", "😍", "👍", "🍻", "⭐", "🥰", "🤩", "🌠", "🔥", "😘", "👏", "🎬", "✔️", "🎉", "⚡️", "🤟", "🤓", "😎", "🏆", "🔥", "🤭", "🤠", "🆒", "👻", "😁"]
 
 # ============================
 # Commands Bot
