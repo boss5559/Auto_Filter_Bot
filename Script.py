@@ -224,7 +224,7 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = f"""<b>Fɪʟᴇɴᴀᴍᴇ :</b> <a href="https://t.me/OveshBossOfficial">{file_name}</a>
+    CAPTION = """<b>Fɪʟᴇɴᴀᴍᴇ :</b> <a href="https://t.me/OveshBossOfficial">{file_name}</a>
 <b>ǫᴜᴀʟɪᴛʏ :</b> {quality}
 <b>ʟᴀɴɢᴜᴀɢᴇ :</b> {language}
 <b>ʏᴇᴀʀ :</b> {year}
