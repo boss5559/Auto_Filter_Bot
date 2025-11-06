@@ -101,8 +101,8 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('[ɢʀᴏᴜᴘ]', callback_data='help'),
-                    InlineKeyboardButton('[ᴄʜᴀɴɴᴇɪ] ', callback_data='about')
+                    InlineKeyboardButton('[ɢʀᴏᴜᴘ]', url='https://t.me/OnlyBossMoviesGroup'),
+                    InlineKeyboardButton('[ᴄʜᴀɴɴᴇɪ] ', url='https://t.me/OveshBossOfficial')
                 ],[
                     InlineKeyboardButton('[ʜᴇʟᴘ]', callback_data='help'),
                     InlineKeyboardButton('[ᴀʙᴏᴜᴛ]', callback_data='about')
@@ -136,8 +136,8 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('[ɢʀᴏᴜᴘ]', callback_data='help'),
-                    InlineKeyboardButton('[ᴄʜᴀɴɴᴇɪ] ', callback_data='about')
+                    InlineKeyboardButton('[ɢʀᴏᴜᴘ]', url='https://t.me/OnlyBossMoviesGroup'),
+                    InlineKeyboardButton('[ᴄʜᴀɴɴᴇɪ] ', url='https://t.me/OveshBossOfficial')
                 ],[
                     InlineKeyboardButton('[ʜᴇʟᴘ]', callback_data='help'),
                     InlineKeyboardButton('[ᴀʙᴏᴜᴛ]', callback_data='about')
