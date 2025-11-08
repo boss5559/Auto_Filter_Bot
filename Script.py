@@ -224,10 +224,7 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """<b><a href="https://t.me/OnlyBossMoviesGroup">{file_name}</a></b>\n\n<b>🎞️ ǫᴜᴀʟɪᴛʏ : <b>{quality}</b>
-🎧 ᴀᴜᴅɪᴏ    : <b>{language}</b>
-🔥 ʀᴀᴛɪɴɢ   : <b>{rating}</b>
-⚜️ Powered By : <a href="https://t.me/OveshBossOfficial">[ BOSS_MOVIES ]</a></b>"""
+    CAPTION =  """<b><a href="https://t.me/OnlyBossMoviesGroup">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href="https://t.me/OveshBossOfficial">[ BOSS ]</a></b>"""
     
     MOVIE_UPDATE_NOTIFY_TXT = """
 </b><a href={poster_url}>📥</a><a href={imdb_url}>New {tag} Added</a></b>
