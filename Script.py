@@ -224,11 +224,10 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """<b>Fɪʟᴇɴᴀᴍᴇ :</b> <a href="https://t.me/dreamxbotz">{file_name}</a><br>
-<b>ǫᴜᴀʟɪᴛʏ :</b> {quality}<br>
-<b>ʟᴀɴɢᴜᴀɢᴇ :</b> {language}<br>
-<b>ʏᴇᴀʀ :</b> {year}<br>
-<b>Pᴏᴡᴇʀᴇᴅ ʙʏ :</b> <a href="https://t.me/dreamxbotz">[ ᴅʀᴇᴀᴍxʙᴏᴛᴢ ]</a>"""
+    CAPTION = """<b><a href="https://t.me/OnlyBossMoviesGroup">{file_name}</a></b>\n\n<b>🎞️ ǫᴜᴀʟɪᴛʏ : <b>{quality}</b>
+🎧 ᴀᴜᴅɪᴏ    : <b>{language}</b>
+🔥 ʀᴀᴛɪɴɢ   : <b>{rating}</b>
+⚜️ Powered By : <a href="https://t.me/OveshBossOfficial">[ BOSS_MOVIES ]</a></b>"""
     
     MOVIE_UPDATE_NOTIFY_TXT = """
 </b><a href={poster_url}>📥</a><a href={imdb_url}>New {tag} Added</a></b>
