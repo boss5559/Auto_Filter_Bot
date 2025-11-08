@@ -102,7 +102,7 @@ async def start(client, message):
                     InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('[ɢʀᴏᴜᴘ]', url='https://t.me/OnlyBossMoviesGroup'),
-                    InlineKeyboardButton('[ᴄʜᴀɴɴᴇɪ] ', url='https://t.me/OveshBossOfficial')
+                    InlineKeyboardButton('[ᴄʜᴀɴɴᴇʟ ] ', url='https://t.me/OveshBossOfficial')
                 ],[
                     InlineKeyboardButton('[ʜᴇʟᴘ]', callback_data='help'),
                     InlineKeyboardButton('[ᴀʙᴏᴜᴛ]', callback_data='about')
