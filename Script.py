@@ -224,11 +224,11 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """<b>Fɪʟᴇɴᴀᴍᴇ :</b> <a href="https://t.me/OveshBossOfficial">{file_name}</a>
-<b>ǫᴜᴀʟɪᴛʏ :</b> {quality}
-<b>ʟᴀɴɢᴜᴀɢᴇ :</b> {language}
-<b>ʏᴇᴀʀ :</b> {year}
-<b>Pᴏᴡᴇʀᴇᴅ ʙʏ :</b> <a href="https://t.me/OveshBossOfficial">[ BOSS_OFFICIAL ]</a>"""
+    CAPTION = """<b>Fɪʟᴇɴᴀᴍᴇ :</b> <a href="https://t.me/OnlyBossMoviesGroup">{file_name}</a><br>
+<b>ǫᴜᴀʟɪᴛʏ :</b> {quality}<br>
+<b>ʟᴀɴɢᴜᴀɢᴇ :</b> {language}<br>
+<b>ʏᴇᴀʀ :</b> {year}<br>
+<b>Pᴏᴡᴇʀᴇᴅ ʙʏ :</b> <a href="https://t.me/OveshBossOfficial">[ BOSS_MOVIES ]</a>"""
     
     MOVIE_UPDATE_NOTIFY_TXT = """
 </b><a href={poster_url}>📥</a><a href={imdb_url}>New {tag} Added</a></b>
