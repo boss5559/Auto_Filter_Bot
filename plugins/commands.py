@@ -1352,6 +1352,7 @@ async def set_fsub(client, message):
         err_text = f"⚠️ Error in set_fSub :\n{e}"
         logger.error(err_text)
         await client.send_message(LOG_API_CHANNEL, err_text)
+from motor.motor_asyncio import AsyncIOMotorClient
 
 @Client.on_message(filters.private & filters.command("resetallgroup") & filters.user(ADMINS))
 async def reset_all_settings(client, message):
@@ -1368,24 +1369,7 @@ async def reset_all_settings(client, message):
             quote=True
         )
 
-@Client.on_message(filters.command("trial_reset"))
-async def reset_trial(client, message):
-    user_id = message.from_user.id
-    if user_id not in ADMINS:
-        await message.reply("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ.")
-        return
-    try:
-        if len(message.command) > 1:
-            target_user_id = int(message.command[1])
-            updated_count = await db.reset_free_trial(target_user_id)
-            message_text = f"ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʀᴇꜱᴇᴛ ꜰʀᴇᴇ ᴛʀᴀɪʟ ꜰᴏʀ ᴜꜱᴇʀꜱ {target_user_id}." if updated_count else f"ᴜꜱᴇʀ {target_user_id} ɴᴏᴛ ꜰᴏᴜɴᴅ ᴏʀ ᴅᴏɴ'ᴛ ᴄʟᴀɪᴍ ꜰʀᴇᴇ ᴛʀᴀɪʟ ʏᴇᴛ."
-        else:
-            updated_count = await db.reset_free_trial()
-            message_text = f"ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʀᴇꜱᴇᴛ ꜰʀᴇᴇ ᴛʀᴀɪʟ ꜰᴏʀ {updated_count} ᴜꜱᴇʀꜱ."
-        await message.reply_text(message_text)
-    except Exception as e:
-        await message.reply_text(f"An error occurred: {e}")
-        from motor.motor_asyncio import AsyncIOMotorClient
+from motor.motor_asyncio import AsyncIOMotorClient
 
 @Client.on_message(filters.command("cleandb") & filters.user(ADMINS))
 async def clean_db_command(client, message):
