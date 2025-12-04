@@ -1368,7 +1368,6 @@ async def reset_all_settings(client, message):
             "<b>🚫 An error occurred while resetting group settings.\nPlease try again later.</b>",
             quote=True
         )
-
 from motor.motor_asyncio import AsyncIOMotorClient
 
 @Client.on_message(filters.command("cleandb") & filters.user(ADMINS))
